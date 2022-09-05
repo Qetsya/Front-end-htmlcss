@@ -1,3 +1,82 @@
-h1 {
-    color: yellow;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(https://cutewallpaper.org/28/creamy-white-wallpaper/2146825742.jpg);
+}
+
+.wrapper {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+}
+
+header,
+article a {
+    background-color: rgb(180, 203, 0);
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header img {
+    height: 70px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li:not(:last-child) {
+    margin-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+article {
+    flex: 1;
+}
+
+article img {
+    float: left;
+    width: 200px;
+    margin: 0 20px 20px 0;
+}
+
+p {
+    text-align: justify;
+}
+
+article:not(:last-child) {
+    margin-right: 20px;
+}
+
+article nav {
+    display: flex;
+    justify-content: right;
+}
+
+article a {
+    color: white;
+    border: none;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
 }
