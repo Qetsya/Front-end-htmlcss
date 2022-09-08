@@ -1,19 +1,22 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 body {
     margin: 0;
-    background-color: rgb(220, 190, 180);
 }
 
 header,
 footer {
-    width: 800px;
+    background-color: rgb(220, 190, 180);
+}
+
+.wrapper {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-header {
+header div {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -21,7 +24,7 @@ header {
 }
 
 header img {
-    height: 50px;
+    max-width: 50px;
 }
 
 header ul,
@@ -44,13 +47,12 @@ a {
     color: white;
 }
 
+section:not(:first-child) {
+    border-bottom: 1px solid black;
+}
 
-article,
-h1,
-h2,
-.bad-art ul {
-    max-width: 800px;
-    margin: 0 auto;
+section {
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -59,21 +61,13 @@ h1 {
 }
 
 h2 {
-    padding: 20px 0;
+    padding: 30px 0 10px 0;
+    margin: 0;
     font-size: 20px;
-}
-
-article {
-    padding-bottom: 20px;
 }
 
 p {
     margin: 0 0 20px 0;
-}
-
-.maincontent article img {
-    width: 200px;
-    float: right;
 }
 
 .maincontent {
@@ -81,17 +75,21 @@ p {
     flex-direction: column;
 }
 
-.bad-art article {
+.maincontent article img {
+    max-width: 250px;
+    float: right;
+}
+
+.bad-art article,
+.bad-art ul {
     display: flex;
 }
 
-
 .bad-art ul {
-    display: flex;
-    border: 1px solid rgb(242, 238, 235);
+    border: 1px solid rgb(243, 212, 189);
     border-radius: 10px;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
 }
 
@@ -101,10 +99,11 @@ p {
 
 .bad-art li {
     border-bottom: 1px solid black;
-    padding: 3px 0;
+    padding: 5px 0;
 }
 
 .stock-art img {
+    display: block;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -113,9 +112,8 @@ p {
 
 .stock-art article {
     display: flex;
+    justify-content: space-between;
 }
-
-
 
 section:nth-child(odd) {
     background-color: white;
@@ -127,6 +125,11 @@ section:nth-child(even) {
 
 footer {
     text-align: center;
-    padding: 10px;
-    font-size: 10px;
+    padding: 20px;
+    font-size: 15px;
+    color: grey;
+}
+
+footer span {
+    font-size: 8px;
 }
