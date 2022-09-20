@@ -24,14 +24,16 @@ h4 {
     color: rgb(139, 139, 139);
     font-weight: 400;
 }
+
 .wrapper {
-    width: 90%;
+    max-width: 350px;
     margin: 0 auto;
 }
 
 header {
     height: 55px;
     box-shadow: 0 5px 5px -5px #333;
+    position: relative;
 }
 
 nav {
@@ -67,7 +69,7 @@ header nav ul,
 
 .hero {
     background-image: url(https://www.w3schools.com/w3images/architect.jpg);
-    height: 200px;
+    height: 30vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,7 +182,7 @@ footer {
 
 @media only screen and (min-width: 678px){
     .wrapper {
-        width: 80%;
+        max-width: 900px;
     }
 
     header nav ul {
@@ -191,8 +193,9 @@ footer {
         display: initial;
     }
 
-    .hero {
-        height: 400px;
+    .hero,
+    .contact-form img {
+        height: 50vh;
     }
 
     .projects,
@@ -202,31 +205,26 @@ footer {
 
     .projects > div {
         height: 200px;
-        width: calc(50% - 5px);
     }
+
+    .workers > div,
+    .projects > div {
+        width: calc(50% - 5px);
+        }    
 
     .workers {
         gap: 10px;
-    }
-
-    .workers > div {
-    width: calc(50% - 5px);
-    }
-
-    .contact-form img {
-        height: 400px;
     }
 }
 
 
 @media only screen and (min-width: 1200px){
     .hero {
-        height: 600px;
+        height: 70vh;
     }
 
     .projects > div,
     .workers > div {
-        gap: 12px;
-        width: calc(25% - 9px);
+        width: calc((100% - 30px) / 4);
     }
 }
