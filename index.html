@@ -1,150 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Br Architects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Responsive images</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
+<body> 
     <header>
-        <div class="wrapper">
-            <nav>
-                <a href="#">
-                    <h2><span>BR</span> Architects</h2>
-                </a>
-
-                <ul>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <a href="/home"></a>
+                <picture>
+                    <source srcset="telia_wholesale.footer.svg" media="(min-width: 700px)">
+                    <img class="logo" src="telia-logo.svg" alt="logo">
+                </picture>
+            <img class="mobile-logo" src="telia-logo.svg" alt="logo">
+            <a href="/home"></a>
+            <img class="desktop-logo" src="telia_wholesale_footer.svg" alt="logo">
+            <ul>
+                <li>Pagrindinis</li>
+                <li>Pagrindinis</li>
+                <li>Pagrindinis</li>
+            </ul>
+        </nav>
     </header>
 
-
-    <main>
-        <div class="hero">
-                <h1><span class="logo">BR</span> <span class="company-name">Architects</span></h1>
-        </div>
-
-        <div class="wrapper">
-            <h2>Projects</h2>
-
-            <div class="projects">
-                <div class="summer-house">
-                    <p>Summer House</p>
-                </div>
-                <div class="brick-house">
-                    <p>Brick House</p>
-                </div>
-                <div class="renovated">
-                    <p>Renovated</p>
-                </div>
-                <div class="barn-house">
-                    <p>Barn House</p>
-                </div>
-                <div class="summer-house">
-                    <p>Summer House</p>
-                </div>
-                <div class="brick-house">
-                    <p>Brick House</p>
-                </div>
-                <div class="renovated">
-                    <p>Renovated</p>
-                </div>
-                <div class="barn-house">
-                    <p>Barn House</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <h2>About</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odit debitis culpa eum, quaerat
-                dicta quibusdam blanditiis minima natus? Neque, officiis! Nisi non laudantium libero dolorum animi
-                exercitationem veritatis atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit deleniti
-                natus ratione sunt! Placeat illum odio alias facere repudiandae similique quo voluptates, laboriosam,
-                commodi reprehenderit fugiat? Perspiciatis cum sunt facere.</p>
-
-            <div class="workers">
-                <div>
-                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John-Dae">
-                    <h3>John Doe</h3>
-                    <h4>CEO & Founder</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, saepe, cum iste optio iure
-                        reiciendis.</p>
-
-                    <a href="#">contact</a>
-                </div>
-
-                <div>
-                    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane-Dae">
-                    <h3>Jane Doe</h3>
-                    <h4>Architect</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, saepe, cum iste optio iure
-                        reiciendis.</p>
-
-                    <a href="#">contact</a>
-                </div>
-
-                <div>
-                    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike-Ross">
-                    <h3>Mike Ross</h3>
-                    <h4>Architect</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, saepe, cum iste optio iure
-                        reiciendis.</p>
-
-                    <a href="#">contact</a>
-                </div>
-
-                <div>
-                    <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan-Star">
-                    <h3>Dan Star</h3>
-                    <h4>Architect</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, saepe, cum iste optio iure
-                        reiciendis.</p>
-
-                    <a href="#">contact</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <h2>Contact</h2>
-
-            <p>Let's get in touch and talk about your next project.</p>
-            <div class="contact-form">
-                <form action="index.html">
-                    <input type="text" class="name" placeholder="Name">
-                    <input type="email" class="email" placeholder="Email">
-                    <input type="text" class="subject" placeholder="Subject">
-                    <input type="text" class="comment" placeholder="Comment">
-
-                    <button class="submit">send message</button>
-                </form>
-            <img src="https://www.w3schools.com/w3images/map.jpg" alt="map">
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        Powered by w3.css
-    </footer>
+    <picture>
+        <source srcset="images/webp/forest.webp" type="image/webp" media="(min-width: 900px">
+        <source srcset="images/webp/forest-medium.webp" type="image/webp" media="min-width: 700px">
+        <source srcset="images/webp/forest-small.webp 1x, images.webp/forest.webp 3x" type="image/webp">
+        <img src="images/jpg/forest.jpg" alt="miskas">
+    </picture>
+    
 </body>
-
 </html>

@@ -1,237 +1,36 @@
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: white;
-    margin: 0;
-    color: black;
-}
-
-h2:not(nav a h2) {
-    font-size: 20px;
-    margin: 30px 0 25px 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(177, 174, 174);
-}
-
-p,
-footer {
-    font-size: 12px;
-}
-
-h4 {
-    color: rgb(139, 139, 139);
-    font-weight: 400;
-}
-
-.wrapper {
-    max-width: 350px;
-    margin: 0 auto;
-}
-
 header {
-    height: 55px;
-    box-shadow: 0 5px 5px -5px #333;
-    position: relative;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav a {
-    text-decoration: none;
-    color: inherit;
-}
-
-nav a h2 {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-nav a span {
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-header nav ul {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
-}
-
-header nav ul,
-.hero .company-name {
-    display: none;
-}
-
-.hero {
-    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
-    height: 30vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 50px;
-}
-
-.hero {
-    display: flex;
-    justify-content: center;
-}
-
-.hero h1 {
-    align-self: center;
-    color: white;
-}
-
-.logo {
     background-color: black;
-    opacity: 0.8;
-    padding: 8px;
 }
 
-.projects,
-.workers {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-    margin-bottom: 50px;
+header img {
+    width: 100px;
 }
 
-.workers {
-    gap: 20px;
-}
-
-.projects > div,
-.workers div img,
-.contact-form img {
-    height: 240px;
-    background-size: cover;
-    width: 100%;
-    object-fit: scale-down;
-    background-position: center;
-}
-
-.projects div p,
-.contact-form form button,
-footer {
-    background-color: black;
-    color: white;
-}
-
-.projects div p {
-    display: inline-block;
-    margin: 0;
-    padding: 5px;
-}
-
-.summer-house {
-    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
-}
-
-.brick-house {
-    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
-}
-
-.renovated {
-    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
-}
-
-.barn-house {
-    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
-}
-
-.workers div a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    text-align: center;
-    padding: 8px;
-    background-color: rgb(223, 221, 221);
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.contact-form form input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid rgb(204, 202, 202);
-}
-
-.contact-form form button {
-    border: none;
-    padding: 8px;
-    margin: 10px 0;
-    width: 150px;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-.contact-form {
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-}
-
-
-@media only screen and (min-width: 678px){
-    .wrapper {
-        max-width: 900px;
-    }
-
-    header nav ul {
+@media screen and (min-width:760px) {
+    nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .hero .company-name {
-        display: initial;
-    }
-
-    .hero,
-    .contact-form img {
-        height: 50vh;
-    }
-
-    .projects,
-    .workers {
-        flex-flow: row wrap;
-    }
-
-    .projects > div {
-        height: 150px;
-    }
-
-    .workers > div,
-    .projects > div {
-        width: calc(50% - 5px);
-        }    
-
-    .workers {
+    ul {
+        display: flex;
         gap: 10px;
     }
-}
 
-
-@media only screen and (min-width: 1200px){
-    .hero {
-        height: 70vh;
+    /* img {
+        width: 200px;
     }
 
-    .projects > div,
-    .workers > div {
-        width: calc((100% - 30px) / 4);
+    .desktop-logo {
+        display: block;
+    }
+
+    .mobile-logo {
+        display: none;
+    } */
+    header img {
+        width: 200px;
     }
 }
+
