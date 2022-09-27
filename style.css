@@ -4,6 +4,7 @@ header {
 
 header img {
     width: 100px;
+    object-fit: cover;
 }
 
 @media screen and (min-width:760px) {
@@ -18,17 +19,6 @@ header img {
         gap: 10px;
     }
 
-    /* img {
-        width: 200px;
-    }
-
-    .desktop-logo {
-        display: block;
-    }
-
-    .mobile-logo {
-        display: none;
-    } */
     header img {
         width: 200px;
     }
