@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,92 @@
     <title>Responsive images</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <header>
-        <nav>
-            <a href="/home"></a>
-                <picture>
-                    <source srcset="telia_wholesale.footer.svg" media="(min-width: 700px)">
-                    <img class="logo" src="telia-logo.svg" alt="logo">
-                </picture>
-            </a>
-            <ul>
-                <li>Pagrindinis</li>
-                <li>Pagrindinis</li>
-                <li>Pagrindinis</li>
-            </ul>
-        </nav>
-    </header>
 
-    <picture>
-        <source srcset="images/webp/forest.webp" type="image/webp" media="(min-width: 900px">
-        <source srcset="images/webp/forest-medium.webp" type="image/webp" media="min-width: 700px">
-        <source srcset="images/webp/forest-small.webp 1x, images.webp/forest.webp 3x" type="image/webp">
-        <img src="images/jpg/forest.jpg" alt="miskas">
-    </picture>
-    
+<body>
+    <main>
+        <div class="wrapper content">
+            <div class="main-content">
+                <article>
+                    <picture>
+                        <source srcset="assets/open-sign.webp" type="image/webp" media="(min-width: 700px)">
+                        <source srcset="assets/open-sign-small.webp" type="image/webp">
+                        <img src="images/open-sign.jpg" alt="open-logo">
+                    </picture>
+                    <h2>Hello World</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eveniet quia minus error
+                        temporibus iure exercitationem nisi molestias odio excepturi, sunt ex, quidem quod voluptatum
+                        voluptatem, numquam dolore. Autem, vitae.</p>
+                    <div class="author">
+                        <span>By Joe Smith</span>
+                        <a href="#">42 comments</a>
+                    </div>
+                </article>
+                <article>
+                    <picture>
+                        <source srcset="assets/coffee-photo.webp" type="image/webp" media="(min-width: 700px)">
+                        <source srcset="assets/coffee-photo-small.webp" type="image/webp">
+                        <img src="images/coffee-photo.jpg" alt="coffee-image">
+                    </picture>
+                    <h2>Hello World</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eveniet quia minus error
+                        temporibus iure exercitationem nisi molestias odio excepturi, sunt ex, quidem quod voluptatum
+                        voluptatem, numquam dolore. Autem, vitae.</p>
+                    <div class="author">
+                        <span>By Joe Smith</span>
+                        <a href="#">42 comments</a>
+                    </div>
+                </article>
+            </div>
+            <div class="additional-content">
+                <article>
+                    <picture>
+                        <source srcset="assets/laptop.webp" type="image/webp" media="(min-width: 700px)">
+                        <source srcset="assets/laptop-small.webp" type="image/webp">
+                        <img src="images/laptop-small.jpg" alt="laptop">
+                    </picture>
+                    <h2>Hello World</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eveniet. Amet consectetur
+                        adipisicing elit. Doloribus eveniet.</p>
+                    <div class="author">
+                        <span>By Joe Smith</span>
+                        <a href="#">42 comments</a>
+                    </div>
+                </article>
+                <article>
+                    <h2>Hello World</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="author">
+                        <span>By Joe Smith</span>
+                        <a href="#">42 comments</a>
+                    </div>
+                </article>
+                <article>
+                    <h2>Hello World</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="author">
+                        <span>By Joe Smith</span>
+                        <a href="#">42 comments</a>
+                    </div>
+                </article>
+                <article>
+                    <h2>Hello World</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="author">
+                        <span>By Joe Smith</span>
+                        <a href="#">42 comments</a>
+                    </div>
+                </article>
+                <article>
+                    <h2>Hello World</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="author">
+                        <span>By Joe Smith</span>
+                        <a href="#">42 comments</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
