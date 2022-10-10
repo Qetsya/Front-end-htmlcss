@@ -5,109 +5,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive images</title>
+    <title>Responsive images, grid</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="wrapper content">
-        <div class="main-content">
-            <article>
-                <picture>
-                    <source srcset="assets/open-sign.webp" type="image/webp" media="(min-width: 700px)">
-                    <source srcset="assets/open-sign-small.webp" type="image/webp">
-                    <img src="images/open-sign.jpg" alt="open-logo">
-                </picture>
-                <section>
-                    <h2>Hello World</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eveniet quia minus error
-                        temporibus iure exercitationem nisi molestias odio excepturi, sunt ex, quidem quod
-                        voluptatum
-                        voluptatem, numquam dolore. Autem, vitae.</p>
-                    <footer class="author">
-                        <span>By Joe Smith</span>
-                        <a href="#">42 comments</a>
-                    </footer>
-                </section>
-            </article>
-            <article>
-                <picture>
-                    <source srcset="assets/coffee-photo.webp" type="image/webp" media="(min-width: 700px)">
-                    <source srcset="assets/coffee-photo-small.webp" type="image/webp">
-                    <img src="images/coffee-photo.jpg" alt="coffee-image">
-                </picture>
-                <section>
-                    <h2>Hello World</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eveniet quia minus error
-                        temporibus iure exercitationem nisi molestias odio excepturi, sunt ex, quidem quod
-                        voluptatum
-                        voluptatem, numquam dolore. Autem, vitae.</p>
-                    <footer class="author">
-                        <span>By Joe Smith</span>
-                        <a href="#">42 comments</a>
-                    </footer>
-                </section>
-            </article>
-        </div>
-        <div class="additional-content">
-            <article>
-                <picture>
-                    <source srcset="assets/laptop.webp" type="image/webp" media="(min-width: 700px)">
-                    <source srcset="assets/laptop-small.webp" type="image/webp">
-                    <img src="images/laptop-small.jpg" alt="laptop">
-                </picture>
-                <section>
-                    <h2>Hello World</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eveniet. Amet consectetur
-                        adipisicing elit. Doloribus eveniet.</p>
-                    <footer class="author">
-                        <span>By Joe Smith</span>
-                        <a href="#">42 comments</a>
-                    </footer>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Hello World</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <footer class="author">
-                        <span>By Joe Smith</span>
-                        <a href="#">42 comments</a>
-                    </footer>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Hello World</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <footer class="author">
-                        <span>By Joe Smith</span>
-                        <a href="#">42 comments</a>
-                    </footer>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Hello World</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <footer class="author">
-                        <span>By Joe Smith</span>
-                        <a href="#">42 comments</a>
-                    </footer>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2>Hello World</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <footer class="author">
-                        <span>By Joe Smith</span>
-                        <a href="#">42 comments</a>
-                    </footer>
-                </section>
-            </article>
+    <header class="header">
+        <nav class="header__navigation">
+            <img class="navigation--logo" src="images/thumbnail_1.jpg" alt="nav-photo">
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href="#">Item</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#">Item</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#">Item</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#">Item</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <h1 class="grid-container__label">Page title</h1>
+
+            <div class="card-list">
+                <h2>What we do</h2>
+                <div class="card-list__content-container">
+                    <div class="card-list__content">
+                        <section>
+                            <picture>
+                                <source srcset="assets/work-harder.webp" type="image/webp" media="(min-width:601px)">
+                                <source srcset="assets/work-harder-small.webp" type="image/webp"
+                                    media="(max-width:600px)">
+                                <img src="images/work-harder.jpg" alt="work-harder">
+                            </picture>
+                            <h3>any little will be uppercase</h3>
+                            <p><span>photo</span> above is 10 em height. This paragraph can be of <span>any</span>
+                                height.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="card-list__content">
+                        <section>
+                            <picture>
+                                <source srcset="assets/work-harder.webp" type="image/webp" media="(min-width:601px)">
+                                <source srcset="assets/work-harder-small.webp" type="image/webp"
+                                    media="(max-width:600px)">
+                                <img src="images/work-harder.jpg" alt="work-harder">
+                            </picture>
+                            <h3>any little will be uppercase</h3>
+                            <p><span>photo</span> above is 10 em height. This paragraph can be of <span>any</span>
+                                height.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="card-list__content">
+                        <section>
+                            <picture>
+                                <source srcset="assets/work-harder.webp" type="image/webp" media="(min-width:601px)">
+                                <source srcset="assets/work-harder-small.webp" type="image/webp"
+                                    media="(max-width:600px)">
+                                <img src="images/work-harder.jpg" alt="work-harder">
+                            </picture>
+                            <h3>any little will be uppercase</h3>
+                            <p><span>photo</span> above is 10 em height. This paragraph can be of <span>any</span>
+                                height.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="card-list__content">
+                        <section>
+                            <picture>
+                                <source srcset="assets/work-harder.webp" type="image/webp" media="(min-width:601px)">
+                                <source srcset="assets/work-harder-small.webp" type="image/webp"
+                                    media="(max-width:600px)">
+                                <img src="images/work-harder.jpg" alt="work-harder">
+                            </picture>
+                            <h3>any little will be uppercase</h3>
+                            <p><span>photo</span> above is 10 em height. This paragraph can be of <span>any</span>
+                                height.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="card-list__content">
+                        <section>
+                            <picture>
+                                <source srcset="assets/work-harder.webp" type="image/webp" media="(min-width:601px)">
+                                <source srcset="assets/work-harder-small.webp" type="image/webp"
+                                    media="(max-width:600px)">
+                                <img src="images/work-harder.jpg" alt="work-harder">
+                            </picture>
+                            <h3>any little will be uppercase</h3>
+                            <p><span>photo</span> above is 10 em height. This paragraph can be of <span>any</span>
+                                height.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="card-list__content">
+                        <section>
+                            <picture>
+                                <source srcset="assets/work-harder.webp" type="image/webp" media="(min-width:601px)">
+                                <source srcset="assets/work-harder-small.webp" type="image/webp"
+                                    media="(max-width:600px)">
+                                <img src="images/work-harder.jpg" alt="work-harder">
+                            </picture>
+                            <h3>any little will be uppercase</h3>
+                            <p><span>photo</span> above is 10 em height. This paragraph can be of <span>any</span>
+                                height.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form action="index.html" class="contact-container__form">
+                    <input type="text" class="contact-container__text-input" placeholder="There's no outline">
+                    <input type="text" class="contact-container__text-input" placeholder="Font-size is 1em">
+                    <input type="email" class="contact-container__text-input" placeholder="Enter your email">
+                    <div class="contact-container__checks">
+                        <label for="flexbox-check">Flexbox</label>
+                        <label for="grid-check">Grid</label>
+
+                        <input type="checkbox" class="grid-check" name="Grid">
+                        <input type="checkbox" class="flexbox-check" name="Flexbox">
+                    </div>
+                    <button type="submit" class="contact-container__button">A Button</button>
+                </form>
+            </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-contacts">
+                <h4 class="footer-contacts__label">Contact on the left</h4>
+                <ul class="footer-contacts__list">
+                    <li>We're here</li>
+                    <li>We're here</li>
+                    <li>We're here</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-links__label">Random links on the right</h4>
+                <ul class="footer-links__list">
+                    <li>
+                        <a href="#">Please click this link</a>
+                    </li>
+                    <li>
+                        <a href="#">Please click this link</a>
+                    </li>
+                    <li>
+                        <a href="#">Please click this link</a>
+                    </li>
+                    <li>
+                        <a href="#">Very Important</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
