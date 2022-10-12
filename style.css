@@ -2,100 +2,23 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: pink;
-    position: sticky;
-    top: 0;
-}
-
-nav {
-    height: 70px;
-}
-
 div {
-    background-color: black;
-    padding: 20px;
-
-    /* position: relative; */
-    display: flex;
-    gap: 20px;
-}
- .yellow {
-    height: 300px;
-    background-color: yellow;
-    position: sticky;
-    top: 10%;
-
-    /* HACK'AS ISCENTRUOTI ELEMENTA */
-    transform: translateY(-50px); 
- }
-
-
-section {
-    /* position: fixed; */
-    /* top: 10px; */
-    width: 400px;
-    flex: 1 0 0;
-    background-color: red;
+    background-color: rgb(13, 13, 216);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 50%;
 }
 
-/* button {
-    border: 2px solid red;
-    border-radius: 20px;
-    padding: 10px 30px; */
-
-    /* PRIKLAUSO BODY */
-    /* position: relative;
-    top: 0;
-    left: 100px;
-    right: 0;
-    bottom: 0; */
-
-    /* PRIKLAUSO BODY */
-    /* position: absolute;
-    top: 100px;
-    left: 100px;
-    bottom: 100px; */
-
-
-    /* PRIKLAUSO DIV, KAI DIV YRA RELATIVE */
-    /* position: absolute;
-    bottom: 0; */
-
-    /* /* position: absolute;
-    top: 0;  }*/
-
-
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    /* height: 100%; */
-    /* width: 100%; */
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: white;
+    margin: 0;
+    font-size: 50px;
 }
-
-    .modal {
-        background-color: white;
-        padding: 70px;
-        border-radius: 10px;
-
-    }
-
-
-    /* SUKURIAMAS PSEUDO ELEMENTAS */
-    .pseudo::after {
-        content: "";
-       background-color: black;
-       height: 50px;
-       width: 100%;
-       position: absolute;
-       bottom: 0;
-    }
