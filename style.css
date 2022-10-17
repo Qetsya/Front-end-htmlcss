@@ -1,24 +1,61 @@
 body {
     margin: 0;
-}
-
-div {
-    background-color: rgb(13, 13, 216);
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    border-radius: 50%;
-}
-
-p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: rgb(33, 33, 33);
     color: white;
-    margin: 0;
-    font-size: 50px;
 }
+
+.navigation-container {
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.navigation {
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navigation-link::before,
+.navigation-link::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation-link::before {
+    top: 0;
+    left: -100%;
+}
+
+.navigation-link::after {
+    left: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+.navigation-link:hover::before {
+    left: 100%;
+    
+}
+
+.navigation-link:hover::after {
+    left: -100%;
+    transition-delay: 0.5s;
+}
+
+
