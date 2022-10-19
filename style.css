@@ -1,27 +1,5 @@
-body {
-    margin: 0;
-    height: 100vh;
+.main.main-child {
+  background-color: white;
 }
 
-div {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-p {
-    position: relative;
-}
-
-p:after {
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 2px;
-    display: block;
-    background: black;
-    transition: 300ms;
-}
-
-p:hover {
-    width: 100%;
-  }
+/*# sourceMappingURL=style.css.map */
