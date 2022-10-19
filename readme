@@ -1,0 +1,2 @@
+//start sass watch
+sass --watch scss/index.scss style.css
