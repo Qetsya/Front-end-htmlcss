@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-/* div {
-    transform: translate(-50%, -50%) rotate(45deg);
-} */
-
 .main {
     display: grid;
     grid-template-columns: auto 80px auto;
@@ -99,14 +95,27 @@ h2 {
     border-radius: 50%;
     border: 5px solid rgb(223, 219, 219);
     color: white;
-    position: relative;
 }
 
-.photo-text span {
-    position: absolute;
-    font-size: 16px;
+.photo-text__text {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
     text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* kitas budas, 2 columns, flexas (desine puse row-riverse), o linija-main'o pseudo elementas. */
+/* main::before {
+    position: absolute;
+    content: "";
+    background-color: grey;
+    width: 2px;
+    height: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
