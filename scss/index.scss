@@ -1,5 +1,5 @@
 $main-gap: 10px;
-
+$main-color: rgb(100, 92, 255);
 
 * {
     box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
     }
 
     &__blue-label {
-        color: blue;
+        color: $main-color;
     }
 
     &__logo {
@@ -42,7 +42,7 @@ body {
     }
 
     &-navigation a {
-        color: blue;
+        color: $main-color;
     }
 
 }
@@ -50,7 +50,7 @@ body {
 .main-container {
     display: grid;
     grid-template-columns: 50px auto 50px;
-    background-color: aqua;
+    background-color: rgb(248, 250, 252);
     margin-top: 100px;
 
     &__your-task {

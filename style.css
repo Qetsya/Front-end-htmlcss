@@ -23,7 +23,7 @@ body {
   font-size: 30px;
 }
 .header__blue-label {
-  color: blue;
+  color: rgb(100, 92, 255);
 }
 .header__logo {
   width: 15px;
@@ -34,13 +34,13 @@ body {
   gap: 10px;
 }
 .header-navigation a {
-  color: blue;
+  color: rgb(100, 92, 255);
 }
 
 .main-container {
   display: grid;
   grid-template-columns: 50px auto 50px;
-  background-color: aqua;
+  background-color: rgb(248, 250, 252);
   margin-top: 100px;
 }
 .main-container__your-task {
