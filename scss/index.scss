@@ -1,5 +1,86 @@
-.main {
-    &.main-child{
+$main-gap: 10px;
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 100px;
+
+    &-content {
+        grid-column: 2;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        align-items: baseline;
+    }
+
+    &-label {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    &__blue-label {
+        color: blue;
+    }
+
+    &__logo {
+        width: 15px;
+        height: 15px;
+    }
+
+    &-navigation {
+        display: flex;
+        gap: $main-gap;
+    }
+
+    &-navigation a {
+        color: blue;
+    }
+
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    background-color: aqua;
+    margin-top: 100px;
+
+    &__your-task {
+        grid-column: 2;
+        width: 500px;
+        margin: 0 auto;
         background-color: white;
+        text-align: center;
+    }
+
+    & .form {
+        width: 400px;
+        margin: 0 auto;
+
+        // &-label {
+        //     margin: 0;
+        // }
+        & .task-name {
+            width: calc(90% - 100px);
+        }
+
+        & .task-button {
+            width: 100px;
+            border: none;
+        }
+    }
+
+    & .form-error {
+        display: block;
+        text-align: left;
     }
 }
+

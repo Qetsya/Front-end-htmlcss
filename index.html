@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main">
-        <div class="main-child">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-label">Best <span class="header__blue-label">ToDo</span> App</h1>
 
+            <nav class="header-navigation">
+                <a href="#"><img class="header__logo" src="assets/logo/facebook.svg" alt="logo" /></a>
+                <a href="#"></a><img class="header__logo" src="assets/logo/twitter.svg" alt="logo" /></a>
+                <a href="#"></a><img class="header__logo" src="assets/logo/linkedin.svg" alt="logo" /></a>
+            </nav>
         </div>
-    </div>
-</body>
+    </header>
+    <main class="main-container">
+        <div class="main-container__your-task">
+            <form class="form" action="index.html">
+                <h2 class="form-label">Your Tasks</h2>
+                <input class="task-name" type="text" placeholder="e.g.wash dishes">
+                <button class="task-button" type="submit">Add</button>
+
+                <span class="form-error">There was an error</span>
+            </form>
+        </div>
+        <div class="main-container__added-task">
+            <h3 class="added-task__label">Take Out Trashes</h3>
+            <div class="added-task__icons">
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <a href="#"><img src="" alt=""></a>
+            <h3>Walk The Dog</h3>
+            <div class="added-task__icons">
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+            </div>
+        </div>
+    </main>
+  </body>
 </html>

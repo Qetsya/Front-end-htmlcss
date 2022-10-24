@@ -1,5 +1,69 @@
-.main.main-child {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 100px;
+}
+.header-content {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: baseline;
+}
+.header-label {
+  margin: 0;
+  font-size: 30px;
+}
+.header__blue-label {
+  color: blue;
+}
+.header__logo {
+  width: 15px;
+  height: 15px;
+}
+.header-navigation {
+  display: flex;
+  gap: 10px;
+}
+.header-navigation a {
+  color: blue;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  background-color: aqua;
+  margin-top: 100px;
+}
+.main-container__your-task {
+  grid-column: 2;
+  width: 500px;
+  margin: 0 auto;
   background-color: white;
+  text-align: center;
+}
+.main-container .form {
+  width: 400px;
+  margin: 0 auto;
+}
+.main-container .form .task-name {
+  width: calc(90% - 100px);
+}
+.main-container .form .task-button {
+  width: 100px;
+  border: none;
+}
+.main-container .form-error {
+  display: block;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
