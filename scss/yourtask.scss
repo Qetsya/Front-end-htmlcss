@@ -1,0 +1,52 @@
+.main-container {
+       &__your-task {
+        grid-column: 2;
+        width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+
+    &__your-task {
+        padding: 30px;
+        box-shadow: $main-shadow;
+    }
+
+    & .form {
+        width: 100%;
+        position: relative;
+
+        &-label {
+            margin: 0;
+            text-align: center;
+            padding-bottom: $main-gap;
+        }
+        & .task-name {
+            width: 80%;
+            padding: 5px;
+            background-color: rgb(235, 234, 247);
+            border: 1px solid rgb(186, 183, 247);
+            border-right: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        & .task-button {
+            width: 20%;
+            height: 27px;
+            position: absolute;
+            border: none;
+            background-color: $main-color;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    & .form-error {
+        display: block;
+        text-align: left;
+        color: rgb(170, 0, 0);
+        padding: $main-gap 0;
+    }
+}

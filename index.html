@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -21,6 +24,7 @@
     </header>
     <main class="main-container">
         <div class="main-container__your-task">
+            
             <form class="form" action="index.html">
                 <h2 class="form-label">Your Tasks</h2>
                 <input class="task-name" type="text" placeholder="e.g.wash dishes">
@@ -36,12 +40,14 @@
                 <a href="#"><img src="" alt=""></a>
             </div>
         </div>
-        <div>
-            <a href="#"><img src="" alt=""></a>
-            <h3>Walk The Dog</h3>
+        <div class="main-container__added-task">
+            <div class="added-task__container">
+                <img class="check-icon" src="assets/icons/check-solid.svg" alt="check-icon">
+                <h3 class="added-task__label">Walk The Dog</h3>
+            </div>
             <div class="added-task__icons">
-                <a href="#"><img src="" alt=""></a>
-                <a href="#"><img src="" alt=""></a>
+                <a href="edit.html"><img src="assets/icons/pen-to-square-regular.svg" alt=""></a>
+                <a href="#"><img src="assets/icons/trash-solid.svg" alt=""></a>
             </div>
         </div>
     </main>

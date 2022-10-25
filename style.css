@@ -1,15 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 .header {
   display: grid;
-  grid-template-columns: 50px auto 50px;
+  grid-template-columns: 50px 1fr 50px;
   grid-template-rows: 100px;
+  box-shadow: 0 5px 10px -5px rgb(172, 169, 169);
+  position: relative;
 }
 .header-content {
   grid-column: 2;
@@ -33,37 +27,86 @@ body {
   display: flex;
   gap: 10px;
 }
-.header-navigation a {
-  color: rgb(100, 92, 255);
-}
 
-.main-container {
-  display: grid;
-  grid-template-columns: 50px auto 50px;
-  background-color: rgb(248, 250, 252);
-  margin-top: 100px;
-}
 .main-container__your-task {
   grid-column: 2;
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
   background-color: white;
-  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.main-container__your-task {
+  padding: 30px;
+  box-shadow: 0 5px 10px -5px rgb(172, 169, 169);
 }
 .main-container .form {
-  width: 400px;
-  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.main-container .form-label {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
 }
 .main-container .form .task-name {
-  width: calc(90% - 100px);
+  width: 80%;
+  padding: 5px;
+  background-color: rgb(235, 234, 247);
+  border: 1px solid rgb(186, 183, 247);
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .main-container .form .task-button {
-  width: 100px;
+  width: 20%;
+  height: 27px;
+  position: absolute;
   border: none;
+  background-color: rgb(100, 92, 255);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .main-container .form-error {
   display: block;
   text-align: left;
+  color: rgb(170, 0, 0);
+  padding: 10px 0;
+}
+
+.main-container__added-task {
+  grid-column: 2;
+  width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.check-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid green;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.added-task__label {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  background-color: rgb(248, 250, 252);
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,8 @@
 $main-gap: 10px;
 $main-color: rgb(100, 92, 255);
+$main-shadow: 0 5px 10px -5px rgb(172, 169, 169);
+
+@import "header.scss", "yourtask", "added-task.scss";
 
 * {
     box-sizing: border-box;
@@ -7,80 +10,12 @@ $main-color: rgb(100, 92, 255);
 
 body {
     margin: 0;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 50px auto 50px;
-    grid-template-rows: 100px;
-
-    &-content {
-        grid-column: 2;
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
-        align-items: baseline;
-    }
-
-    &-label {
-        margin: 0;
-        font-size: 30px;
-    }
-
-    &__blue-label {
-        color: $main-color;
-    }
-
-    &__logo {
-        width: 15px;
-        height: 15px;
-    }
-
-    &-navigation {
-        display: flex;
-        gap: $main-gap;
-    }
-
-    &-navigation a {
-        color: $main-color;
-    }
-
+    font-family: 'Inter', sans-serif;
 }
 
 .main-container {
     display: grid;
-    grid-template-columns: 50px auto 50px;
+    grid-template-columns: 50px 1fr 50px;
     background-color: rgb(248, 250, 252);
-    margin-top: 100px;
-
-    &__your-task {
-        grid-column: 2;
-        width: 500px;
-        margin: 0 auto;
-        background-color: white;
-        text-align: center;
-    }
-
-    & .form {
-        width: 400px;
-        margin: 0 auto;
-
-        // &-label {
-        //     margin: 0;
-        // }
-        & .task-name {
-            width: calc(90% - 100px);
-        }
-
-        & .task-button {
-            width: 100px;
-            border: none;
-        }
-    }
-
-    & .form-error {
-        display: block;
-        text-align: left;
-    }
+    padding-top: 100px;
 }
-
