@@ -4,11 +4,8 @@
         width: 600px;
         margin: 0 auto;
         background-color: white;
-        border-radius: 5px;
+        border-radius: $main-radius;
         margin-bottom: 50px;
-    }
-
-    &__your-task {
         padding: 30px;
         box-shadow: $main-shadow;
     }
@@ -17,29 +14,33 @@
         width: 100%;
         position: relative;
 
-        &-label {
+        &-title {
             margin: 0;
             text-align: center;
-            padding-bottom: $main-gap;
+            padding-bottom: 16px;
         }
         & .task-name {
             width: 80%;
-            padding: 5px;
-            background-color: rgb(235, 234, 247);
-            border: 1px solid rgb(186, 183, 247);
+            padding: 5px 10px;
+            background-color: rgb(248, 250, 252);
+            border: 1px solid rgb(223, 229, 238);
             border-right: none;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
+            border-radius: $main-radius 0 0 $main-radius;
+        }
+
+        & .task-name::placeholder {
+            color: rgb(155, 169, 189);
+            font-weight: 600;
         }
 
         & .task-button {
             width: 20%;
-            height: 27px;
+            height: 28px;
             position: absolute;
             border: none;
             background-color: $main-color;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+            color: white;
+            border-radius: 0 $main-radius $main-radius 0;
         }
     }
 
@@ -48,5 +49,6 @@
         text-align: left;
         color: rgb(170, 0, 0);
         padding: $main-gap 0;
+        font-size: 12px;
     }
 }

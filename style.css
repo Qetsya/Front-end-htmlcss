@@ -12,11 +12,11 @@
   align-self: center;
   align-items: baseline;
 }
-.header-label {
+.header-title {
   margin: 0;
   font-size: 30px;
 }
-.header__blue-label {
+.header__blue-title {
   color: rgb(100, 92, 255);
 }
 .header__logo {
@@ -35,8 +35,6 @@
   background-color: white;
   border-radius: 5px;
   margin-bottom: 50px;
-}
-.main-container__your-task {
   padding: 30px;
   box-shadow: 0 5px 10px -5px rgb(172, 169, 169);
 }
@@ -44,34 +42,38 @@
   width: 100%;
   position: relative;
 }
-.main-container .form-label {
+.main-container .form-title {
   margin: 0;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 .main-container .form .task-name {
   width: 80%;
-  padding: 5px;
-  background-color: rgb(235, 234, 247);
-  border: 1px solid rgb(186, 183, 247);
+  padding: 5px 10px;
+  background-color: rgb(248, 250, 252);
+  border: 1px solid rgb(223, 229, 238);
   border-right: none;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px 0 0 5px;
+}
+.main-container .form .task-name::placeholder {
+  color: rgb(155, 169, 189);
+  font-weight: 600;
 }
 .main-container .form .task-button {
   width: 20%;
-  height: 27px;
+  height: 28px;
   position: absolute;
   border: none;
   background-color: rgb(100, 92, 255);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }
 .main-container .form-error {
   display: block;
   text-align: left;
   color: rgb(170, 0, 0);
   padding: 10px 0;
+  font-size: 12px;
 }
 
 .main-container__added-task {
@@ -80,32 +82,124 @@
   margin: 0 auto;
   background-color: white;
   border-radius: 5px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 10px -5px rgb(172, 169, 169);
+  display: flex;
+  justify-content: space-between;
 }
 
-.check-icon {
+.added-task__title.line::before {
+  content: url("assets/icons/check-solid.svg");
+  position: absolute;
+  top: 50%;
+  left: -26px;
+  transform: translateY(-50%);
   width: 16px;
   height: 16px;
   border: 1px solid green;
   border-radius: 50%;
-  padding: 2px;
 }
 
-.added-task__label {
+.added-task__title {
   margin: 0;
 }
+.added-task__title.line {
+  text-decoration: line-through 2px;
+}
+.added-task__container {
+  position: relative;
+}
+.added-task__container .invisible {
+  visibility: hidden;
+}
+.added-task__icons {
+  display: flex;
+  gap: 10px;
+}
+.added-task__icons .small-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.main-container__edit-task {
+  grid-column: 2;
+  width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding: 30px;
+  box-shadow: 0 5px 10px -5px rgb(172, 169, 169);
+}
+.main-container__edit-task .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-container__edit-task .form .edit-button {
+  background-color: rgb(100, 92, 255);
+  border: none;
+  color: white;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+.main-container__edit-task .form .form-error {
+  text-align: center;
+}
+.main-container .back-button {
+  grid-column: 2;
+  margin: 0 auto;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 60px;
+  cursor: pointer;
+}
+
+.form__info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.form__info-container .name-container, .form__info-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__info-container .name-container .input-name {
+  font-weight: 600;
+}
+.form__info-container .input-container .id-number {
+  font-weight: 600;
+  border: none;
+}
+.form__info-container .input-container .task-name {
+  font-weight: 600;
+  border: 1px solid rgb(223, 229, 238);
+  width: 100%;
+}
+.form__info-container .input-container .task-name::placeholder {
+  color: black;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  background-color: rgb(248, 250, 252);
 }
 
 .main-container {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
-  background-color: rgb(248, 250, 252);
   padding-top: 100px;
 }
 

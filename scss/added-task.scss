@@ -4,24 +4,53 @@
         width: 600px;
         margin: 0 auto;
         background-color: white;
-        border-radius: 5px;
+        border-radius: $main-radius;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+        box-shadow: $main-shadow;
+
+        display: flex;
+        justify-content: space-between;
     }
 }
 
-.check-icon {
+.added-task__title.line::before {
+    content: url("assets/icons/check-solid.svg");
+    position: absolute;
+    top: 50%;
+    left: -26px;
+    transform: translateY(-50%);
     width: 16px;
     height: 16px;
     border: 1px solid green;
     border-radius: 50%;
-    padding: 2px;
 }
 
+
 .added-task {
-    &__label {
+    &__title {
         margin: 0;
+
+        &.line {
+            text-decoration: line-through 2px;
+        }
     }
 
     &__container {
-        
+        position: relative;
+
+        & .invisible {
+            visibility: hidden;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: $main-gap;
+
+        & .small-icon {
+            width: 12px;
+            height: 12px;
+        }
     }
 }

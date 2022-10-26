@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Page for tasks management">
+    <meta name="theme-color" content="#317EFB" />
+    <link rel="apple-touch-icon" href="/example.png">
     <title>ToDo</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
         <div class="header-content">
-            <h1 class="header-label">Best <span class="header__blue-label">ToDo</span> App</h1>
+            <h1 class="header-title">Best <span class="header__blue-title">ToDo</span> App</h1>
 
             <nav class="header-navigation">
-                <a href="#"><img class="header__logo" src="assets/logo/facebook.svg" alt="logo" /></a>
-                <a href="#"></a><img class="header__logo" src="assets/logo/twitter.svg" alt="logo" /></a>
-                <a href="#"></a><img class="header__logo" src="assets/logo/linkedin.svg" alt="logo" /></a>
+                <a href="#" aria-label="header-logo"><img class="header__logo" src="assets/logo/facebook.svg"
+                        alt="logo" /></a>
+                <a href="#" aria-label="header-logo"></a><img class="header__logo" src="assets/logo/twitter.svg"
+                    alt="logo" /></a>
+                <a href="#" aria-label="header-logo"></a><img class="header__logo" src="assets/logo/linkedin.svg"
+                    alt="logo" /></a>
             </nav>
         </div>
     </header>
     <main class="main-container">
         <div class="main-container__your-task">
-            
-            <form class="form" action="index.html">
-                <h2 class="form-label">Your Tasks</h2>
+
+            <form class="form" action="index.html" method="POST">
+                <h2 class="form-title">Your Tasks</h2>
                 <input class="task-name" type="text" placeholder="e.g.wash dishes">
                 <button class="task-button" type="submit">Add</button>
 
-                <span class="form-error">There was an error</span>
+                <span class="form-error">There Was An Error</span>
             </form>
         </div>
         <div class="main-container__added-task">
-            <h3 class="added-task__label">Take Out Trashes</h3>
+            <div class="added-task__container">
+                <h3 class="added-task__title">Take Out Trashes</h3>
+            </div>
             <div class="added-task__icons">
-                <a href="#"><img src="" alt=""></a>
-                <a href="#"><img src="" alt=""></a>
+                <a href="edit.html" aria-label="edit-logo"><img class="small-icon"
+                        src="assets/icons/pen-to-square-regular.svg" alt=""></a>
+                <a href="#" aria-label="trash-logo"><img class="small-icon" src="assets/icons/trash-solid.svg"
+                        alt=""></a>
             </div>
         </div>
         <div class="main-container__added-task">
             <div class="added-task__container">
-                <img class="check-icon" src="assets/icons/check-solid.svg" alt="check-icon">
-                <h3 class="added-task__label">Walk The Dog</h3>
+                <h3 class="added-task__title line">Walk The Dog</h3>
             </div>
             <div class="added-task__icons">
-                <a href="edit.html"><img src="assets/icons/pen-to-square-regular.svg" alt=""></a>
-                <a href="#"><img src="assets/icons/trash-solid.svg" alt=""></a>
+                <a href="edit.html" aria-label="edit-logo"><img class="small-icon"
+                        src="assets/icons/pen-to-square-regular.svg" alt=""></a>
+                <a href="#" aria-label="trash-logo"><img class="small-icon" src="assets/icons/trash-solid.svg"
+                        alt=""></a>
             </div>
         </div>
     </main>
-  </body>
+</body>
+
 </html>

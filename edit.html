@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#317EFB" />
+    <link rel="apple-touch-icon" href="/example.png">
     <title>Edit-ToDo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">Best <span class="header__blue-title">ToDo</span> App</h1>
+
+            <nav class="header-navigation">
+                <a href="#" aria-label="header-logo"><img class="header__logo" src="assets/logo/facebook.svg"
+                        alt="logo" /></a>
+                <a href="#" aria-label="header-logo"></a><img class="header__logo" src="assets/logo/twitter.svg"
+                    alt="logo" /></a>
+                <a href="#" aria-label="header-logo"></a><img class="header__logo" src="assets/logo/linkedin.svg"
+                    alt="logo" /></a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="main-container__edit-task">
+            <h2 class="form-title">Edit Task</h2>
+            <form class="form" action="index.html" method="POST">
+
+                <div class="form__info-container">
+                    <div class="name-container">
+                        <label class="input-name" for="id-number">Task ID</label>
+                        <label class="input-name" for="name">Name</label>
+                        <label class="input-name" for="checkbox">Completed</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input class="id-number" type="number" name="id" id="id-number" value="123456789" maxlength="9"
+                            readonly>
+                        <input class="task-name" type="text" name="name" id="name" placeholder="Take out trashes">
+                        <input class="check" type="checkbox" name="checkbox" id="checkbox">
+                    </div>
+                </div>
+
+                <button class="edit-button" type="submit" class="edit-button">Edit</button>
+
+                <span class="form-error">There Was An Error</span>
+
+            </form>
+        </div>
+
+        <input class="back-button" type="button" onclick="location.href='index.html';" value="Back To Tasks" />
+
+    </main>
 </body>
+
 </html>
